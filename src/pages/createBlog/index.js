@@ -1,11 +1,11 @@
 import React from "react";
 
-function CreateBlog() {
+const CreateBlog = () => {
   return (
     <div>
       <p>Create-blog</p>
     </div>
   );
-}
+};
 
 export default CreateBlog;

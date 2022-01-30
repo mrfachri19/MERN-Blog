@@ -1,11 +1,11 @@
 import React from "react";
 
-function DetailBlog() {
+const DetailBlog = () => {
   return (
     <div>
       <p>Content detail blog pages</p>
     </div>
   );
-}
+};
 
 export default DetailBlog;

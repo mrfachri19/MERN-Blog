@@ -1,11 +1,11 @@
 import React from "react";
 import "./input.scss";
 
-const Input = () => {
+const Input = ({ label, ...rest }) => {
   return (
     <div className="input-wrapper">
-      <p className="label">Label Input</p>
-      <input className="input" placeholder="form input" />
+      <p className="label">{label}</p>
+      <input className="input" {...rest} />
     </div>
   );
 };

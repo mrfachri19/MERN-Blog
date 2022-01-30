@@ -2,6 +2,9 @@ import React from "react";
 import "./Register.scss";
 import { RegisterBg } from "../../assets";
 import Input from "../../components/atoms/input";
+import Button from "../../components/atoms/button";
+import Gap from "../../components/atoms/gap";
+import Link from "../../components/atoms/link";
 
 function Register() {
   return (
@@ -10,10 +13,16 @@ function Register() {
         <img src={RegisterBg} className="bg-image" alt="bgimage" />
       </div>
       <div className="right">
-        <p>Form Registrasi</p>
-        <Input />
-        <Input />
-        <Input />
+        <p className="title">Form Registrasi</p>
+        <Input label="Full Name" placeholder="enter full name" />
+        <Gap height={18} />
+        <Input label="Email" placeholder="enter email" />
+        <Gap height={18} />
+        <Input label="Password" placeholder="enter password" />
+        <Gap height={50} />
+        <Button title="Register" />
+        <Gap height={20} />
+        <Link title="kembali ke login" />
       </div>
     </div>
   );
